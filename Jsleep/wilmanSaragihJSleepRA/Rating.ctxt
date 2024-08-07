@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Rating
+comment0.text=\r\n\r\n\ @author\ (Wilman\ Saragih\ Sitio)\r\n\ @version\ (2024)\r\n
+comment1.params=
+comment1.target=Rating()
+comment2.params=rating
+comment2.target=void\ insert(int)
+comment3.params=
+comment3.target=double\ getAverage()
+numComments=4

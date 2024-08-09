@@ -22,6 +22,9 @@ public class Price {
         // this.discount = 0;
     }
     
+    public String toString () {
+        return "Price\nPrice: " + price + "\nDiscount: " + discount;
+    }
     /* private double getDiscountedPrice() {
         if (discount > 100.0) {
             discount = 100;

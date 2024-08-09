@@ -26,6 +26,7 @@ public class JSleep {
         System.out.println("Total Price: " + getTotalPrice(price, numberOfNight));
         */
         
+       /*
         Room testroom = createRoom();
         System.out.println(testroom.name);
         System.out.println(testroom.size);
@@ -33,6 +34,19 @@ public class JSleep {
         System.out.println(testroom.facility);
 
         //in.close(); 
+        */
+       
+        Complaint testComplain = new Complaint(1, "23 August 2022", "Bad Quality");
+        Price testPrice = new Price(100000, 20000);
+        Room testRoom = new Room(1, "Presidential Suite", 5, testPrice,
+        Facility.FitnessCenter, City.DEPOK, "JL. Margonda Raya");
+        Account testAccount = new Account(1, "Bob", "bob@gmail.com", "bob");
+        Rating testRating = new Rating();
+        System.out.println(testComplain.toString());
+        System.out.println(testRoom.toString());
+        System.out.println(testAccount.toString());
+        System.out.println(testPrice.toString());
+        System.out.println(testRating.toString());
     }
     
     public static int getHotelId (){
@@ -81,9 +95,11 @@ public class JSleep {
         return price * numberOfNight + getAdminFee(price * numberOfNight);
     }
     
+    /*
     public static Room createRoom() {
         Price price = new Price(100000.0,5);
         Room room = new Room("Restaurant",30,price,Facility.AC);
         return room;
     }
+    */
 }

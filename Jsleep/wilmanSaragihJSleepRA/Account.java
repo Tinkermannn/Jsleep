@@ -8,7 +8,7 @@ package wilmanSaragihJSleepRA;
  * @version (a version number or a date)
  */
 // public class Account
-public class Account extends Serializable {
+public class Account extends Serializable implements FileParser {
     // Ini variabel instance
     public String name;
     public String email;
@@ -19,6 +19,14 @@ public class Account extends Serializable {
         this.name = name;
         this.email = email;
         this.password = password;
+    }
+    
+    // Interface from FileParser
+    public Object write(){
+        return null;
+    }
+    public boolean read(String string){
+        return false;
     }
     
     public String toString () {

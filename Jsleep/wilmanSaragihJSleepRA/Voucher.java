@@ -7,7 +7,7 @@ package wilmanSaragihJSleepRA;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Voucher extends Serializable {
+public class Voucher extends Serializable implements FileParser{
     public Type type;
     public double minimum, cut;
     public String name;
@@ -49,5 +49,13 @@ public class Voucher extends Serializable {
             }
             return price.price - this.cut;
         }
+    }
+    
+    // Interface from FileParser
+    public Object write(){
+        return null;
+    }
+    public boolean read(String string){
+        return false;
     }
 }
